@@ -1,18 +1,119 @@
 <h1>Bookers</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr> 
+  </thead>
 
-<h4>title</h4><h4>body</h4>
-
-<%= link_to "show", book_path(@book.id) %>
-<%= link_to "edit", edit_book_path(@book.id) %>
-<%= link_to "Destroy", destroy_book_path(@book.id), method: :delete  %>
-
-
-
-
-
-
-
-
+<tbody>
+      <% @books.each do |book| %>
+      <tb>
+      <tr>
+      <%= book.title %>
+      </tr>
+      <tr>
+      <%= book.body %>
+      </tr>
+      <tr>
+      <%= link_to "show", book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "edit", edit_book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "Destroy", book_path(book.id), method: :delete  %>
+      </tr>
+      </tb>
+      <tb>
+      <tr>
+      <%= book.title %>
+      </tr>
+      <tr>
+      <%= book.body %>
+      </tr>
+      <tr>
+      <%= link_to "show", book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "edit", edit_book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "Destroy", book_path(book.id), method: :delete  %>
+      </tr>
+      </tb>
+      <tb>
+      <tr>
+      <%= book.title %>
+      </tr>
+      <tr>
+      <%= book.body %>
+      </tr>
+      <tr>
+      <%= link_to "show", book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "edit", edit_book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "Destroy", book_path(book.id), method: :delete  %>
+      </tr>
+      </tb>
+      <tb>
+      <tr>
+      <%= book.title %>
+      </tr>
+      <tr>
+      <%= book.body %>
+      </tr>
+      <tr>
+      <%= link_to "show", book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "edit", edit_book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "Destroy", book_path(book.id), method: :delete  %>
+      </tr>
+      </tb>
+      <tb>
+      <tr>
+      <%= book.title %>
+      </tr>
+      <tr>
+      <%= book.body %>
+      </tr>
+      <tr>
+      <%= link_to "show", book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "edit", edit_book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "Destroy", book_path(book.id), method: :delete  %>
+      </tr>
+      </tb>
+      <tb>
+      <tr>
+      <%= book.title %>
+      </tr>
+      <tr>
+      <%= book.body %>
+      </tr>
+      <tr>
+      <%= link_to "show", book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "edit", edit_book_path(book.id) %>
+      </tr>
+      <tr>
+      <%= link_to "Destroy", book_path(book.id), method: :delete  %>
+      </tr>
+      </tb>
+  </tbody>
+</table>
 <h2>New book</h2>
 <%= form_with model: @book,  local:true do |f| %>
   <h4>title</h4>

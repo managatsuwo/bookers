@@ -5,5 +5,3 @@ root :to =>'homes#top'
 resources :books
 post 'books'=>'books#create'
 end
-#リソーシーズ
-
