@@ -1,34 +1,16 @@
-<body>
-    <p id="notice"></p>
+<h1>Bookers</h1>
 
-<h1>Books</h1>
+<h4>title</h4><h4>body</h4>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= link_to "show", book_path(@book.id) %>
+<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to "Destroy", destroy_book_path(@book.id), method: :delete  %>
 
-  <tbody>
-      <tr>
-        <td>新規投稿2</td>
-        <td>test</td>
-        <td><a class="show_263350" href="/books/263350">Show</a></td>
-        <td><a class="edit_263350" href="/books/263350/edit">Edit</a></td>
-        <td><a data-confirm="Are you sure?" class="destroy_263350" rel="nofollow" data-method="delete" href="/books/263350">Destroy</a></td>
-      </tr>
-      <tr>
-        <td>新規投稿2</td>
-        <td>test2</td>
-        <td><a class="show_263353" href="/books/263353">Show</a></td>
-        <td><a class="edit_263353" href="/books/263353/edit">Edit</a></td>
-        <td><a data-confirm="Are you sure?" class="destroy_263353" rel="nofollow" data-method="delete" href="/books/263353">Destroy</a></td>
-      </tr>
-  </tbody>
-</table>
+
+
+
+
+
 
 
 <h2>New book</h2>
