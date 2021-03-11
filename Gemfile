@@ -55,4 +55,7 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'faker' # Adds support for Capybara system testing and selenium driver
+
+ gem 'pry-byebug', group: :development
+
  end
